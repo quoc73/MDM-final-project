@@ -66,12 +66,13 @@ const Header = () =>{
                         ranges={date} className="calendar"
                         />}
                     </div>
-                    <div className="headerSearchItem">
-                    <button className="headerbtn">Search</button>
-                    </div>
+
             </div>
             </div> 
             </div> 
+            <div className="headerSearchItem">
+                    <button className="headerbtn">Search</button>
+                    </div>
             </div>
             
 

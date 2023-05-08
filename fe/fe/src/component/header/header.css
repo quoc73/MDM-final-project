@@ -44,7 +44,7 @@
     justify-content: center;
     margin-top: 10px;
     margin-left: -230px;
-    width: 1500px;
+    width: 1600px;
     height: 300px;
     position: absolute;
 }
@@ -92,6 +92,7 @@
     border: none;
     outline: none;
     margin-left: 0px;
+    border: none;
 
 }
 .headerSearchText{
@@ -103,6 +104,24 @@
     position: absolute;
     margin-top: 410px;
 }
-.button{
-    background-color:blue ;
+.headerbtn{
+    color: white;
+    width: 110px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #0159d4;
+    position: absolute;
+    margin-left: -130px;
+    margin-bottom: -469px;
+}
+.headerbtn:hover{
+    color: white;
+    width: 110px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #0bb44c;
+    transition: .5s;
+    position: absolute;
+    margin-left: -130px;
+    margin-bottom: -469px;
 }
