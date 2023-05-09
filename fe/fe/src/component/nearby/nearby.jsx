@@ -8,7 +8,9 @@ import image6 from "./6.jpg"
 const Nearby =() =>{
     return(
         <div className="main">
-        <div className="nearby">Nearby Destinations <div className="nearbyDes">Nearby Destinations</div>
+        <div className="nearby">
+            Nearby Destinations <div className="nearbyDes">
+            Nearby Destinations</div>
              <div className="nearbyAttraction">
                 <img src={image} alt="" className="nearbyIMG" />
                 <div className="nearbyTitle">
