@@ -103,6 +103,7 @@
 .calendar{
     position: absolute;
     margin-top: 410px;
+    z-index: 2;
 }
 .headerbtn{
     color: white;

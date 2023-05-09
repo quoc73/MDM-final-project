@@ -1,0 +1,76 @@
+.nearby{
+    margin-top: 60px;
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    z-index: 1;
+    color :white;
+}
+
+.nearbyIMG{
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+
+}
+.nearbyIMG:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+.nearbyAttraction{
+    
+    position: relative;
+    color :white;
+    border-radius: 10px;
+}
+.nearby2{
+    color: white;
+    margin-top: 9px;
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;  
+}
+
+.nearbyIMG2{
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.nearbyAttraction2{
+    
+    position: relative;
+    color :white;
+    border-radius: 10px;
+}
+.nearbyDes{
+    color: black;
+    position: absolute;
+    top:60%;
+    left:22.5%;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.nearbyTitle{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    font-size: 7px;
+    text-transform: arial;
+}
+.nearbyTitle2{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    font-size: 7px;
+    text-transform: arial;
+}
+.nearbyIMG2:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}

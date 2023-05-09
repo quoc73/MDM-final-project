@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../../component/header/header'
+import Navbar from '../../component/navbar/Navbar'
 
 const List =()=>{
     return(
-        <div>List</div>
+        <div>
+            <Navbar/>
+            <Header/> </div>
     )
 }
 export default List
