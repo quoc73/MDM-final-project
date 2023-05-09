@@ -3,6 +3,7 @@ import Header from "../../component/header/header"
 import Nearby from "../../component/nearby/nearby"
 import "./home.css"
 import AttractionList from "../../component/attractionList/attractionList"
+import Footer from "../../component/footer/footer"
 const Home = ()=>{
     return (
         <div><Navbar />
@@ -14,6 +15,7 @@ const Home = ()=>{
             <p className="homeTitleDes">Find things 
             to do in cities around the world</p>
             <AttractionList/>
+            <Footer/>
         </div>
         </div>
     )
