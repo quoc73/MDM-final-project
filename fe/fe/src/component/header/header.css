@@ -126,3 +126,12 @@
     margin-left: -130px;
     margin-bottom: -469px;
 }
+.headerSearchItem input[type=text]{
+    border: none;
+    float: left;
+    padding: -600px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 100px;
+    font-size: 17px;
+}

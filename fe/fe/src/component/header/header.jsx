@@ -6,7 +6,13 @@ import { useState } from 'react';
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import {format}from "date-fns"
-const Header = () =>{
+import {useNavigate} from "react-router-dom"
+const Header = ({type}) =>{
+    const handleSearch =()=>{
+        navigate("/attractions",{state:{destination,date}});
+    }
+    const [destination,setdestination]=useState("")
+    const navigate=useNavigate()
     const [openDate,setOpenDate]=useState(false)
     const [date, setDate] = useState([
         {
@@ -43,7 +49,7 @@ const Header = () =>{
                     <span>Airport taxis</span>
                 </div>
             </div>
-
+        {type !=="list" &&
             <div className="searchAttraction">
                 <h1 className="headerTitle">
                 What do you want to see and do?                              
@@ -54,25 +60,31 @@ const Header = () =>{
                 <div className="headerSearch">
                     <div className="headerSearchItem">
                     <FontAwesomeIcon icon={faMapLocationDot } className='headerIcon' />
-                    <input type="text" placeholder='Where are you going?' className=''/>
+                    <input type="text" 
+                    placeholder='Where are you going?' 
+                    className=''
+                    onChange={e=>setdestination(e.target.value)}/>
                     </div>
                 <div className="headerSearchItem">
-                    <FontAwesomeIcon icon={faCalendar} className='headerIcon'/>
+                    <FontAwesomeIcon icon={faCalendar} className='headerIcon2'/>
                     <span onClick={()=>setOpenDate(!openDate)} className='headerSearchText'>{`${format(date[0].startDate,"MM/dd/yyyy")} to ${format(date[0].endDate,"MM/dd/yyyy")} `}</span>
                     {openDate && <DateRange 
                         editableDateInputs={true}
                         onChange={item => setDate([item.selection])}
                         moveRangeOnFirstSelection={false}
                         ranges={date} className="calendar"
+                        minDate={new Date()}
                         />}
                     </div>
 
             </div>
-            </div> 
-            </div> 
+            </div>
+} 
+            </div>
+            {type !=="list" && 
             <div className="headerSearchItem">
-                    <button className="headerbtn">Search</button>
-                    </div>
+                    <button className="headerbtn" onClick={handleSearch}>Search</button>
+                    </div>} 
             </div>
             
 
