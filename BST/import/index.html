@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website Design by Nhom9</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Bootstrap 5 CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Custom File's Link -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive-style.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img decoding="async" src="../image/logo.png" class="img-fluid" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rooms">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#price">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn" href="#">Book Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar section exit -->
+
+    <!-- Banner section -->
+    <section id="home" class="banner_wrapper p-0">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(../18_Hotel_images/images/slider/slider2.webp);">
+                    <div class="slide-caption text-center">
+                        <div>
+                            <h1>Hotel</h1>
+                            <h1>Bạn muốn trải nhiệm ở đâu?</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(../18_Hotel_images/images/slider/slider1.webp);">
+                    <div class="slide-caption text-center">
+                        <div>
+                            <h1>CHÀO MỪNG BẠN ĐẾN VỚI BOOKING.COM</h1>
+                            <p>Một trang web đặt phòng khách sạn trực tuyến hàng đầu trên thế giới. Nó cung cấp cho
+                                người dùng một trải nghiệm đơn giản và tiện lợi để tìm kiếm, so sánh và đặt phòng khách
+                                sạn từ hàng ngàn địa điểm trên khắp thế giới, giúp người dùng tiết kiệm thời gian và nỗ
+                                lực trong quá trình tìm kiếm và đặt phòng khách sạn. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="container booking-area">
+            <form class="row">
+                <div class="col-lg mb-3 mb-lg-0">
+                    <input type="date" class="form-control" placeholder="Date">
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <input type="date" class="form-control" placeholder="Date">
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <select class="form-select">
+                        <option selected>Adults</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <select class="form-select">
+                        <option selected>Children</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <!--<button type="submit" class="main-btn rounded-2 px-lg-3">Tìm</button>-->
+                    <a type="submit" class="main-btn rounded-2 px-lg-3" href="listhotel.html"
+                        class="btn btn-primary">Tìm</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Banner section exit -->
+
+
+
+    <!-- Rooms section -->
+    <section id="rooms" class="rooms_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6>What I can do for you</h6>
+                    <h3>MỘT SỐ PHÒNG NỔI BẬT</h3>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <div class="room-item">
+                        <img decoding="async" src="../18_Hotel_images/images/room/room1.webp" class="img-fluid">
+                        <div class="room-item-wrap">
+                            <div class="room-content">
+                                <h5 class="text-white mb-lg-5 text-decoration-underline">
+                                    Luxury Condo Nha Trang by SEAGROUP</h5>
+                                <p class="text-white">Khám phá một số phòng trong Collection của chúng tôi</p>
+                                <p class="text-white fw-bold mt-lg-4">4 triệu / 1 đêm</p>
+                                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <div class="room-item">
+                        <img decoding="async" src="../18_Hotel_images/images/room/room2.webp" class="img-fluid">
+                        <div class="room-item-wrap">
+                            <div class="room-content">
+                                <h5 class="text-white mb-lg-5 text-decoration-underline">Glese Beachfront Aparthotel Nha
+                                    Trang</h5>
+                                <p class="text-white">Khám phá một số phòng trong Collection của chúng tôi</p>
+                                <p class="text-white fw-bold mt-lg-4">3 triệu / 1 đêm</p>
+                                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <div class="room-item">
+                        <img decoding="async" src="../18_Hotel_images/images/room/room3.webp" class="img-fluid">
+                        <div class="room-item-wrap">
+                            <div class="room-content">
+                                <h5 class="text-white mb-lg-5 text-decoration-underline">AZ five stars Ocean View
+                                    Apartment</h5>
+                                <p class="text-white">Khám phá một số phòng trong Collection của chúng tôi</p>
+                                <p class="text-white fw-bold mt-lg-4">2 triệu / 1 đêm</p>
+                                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rooms Section Exit -->
+
+    <!-- Services section -->
+    <section id="services" class="services_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6>CHÚNG TÔI Ở ĐÂY LÀ VÌ BẠN</h6>
+                    <h3>CÁC DỊCH VỤ CỦA CHÚNG TÔI</h3>
+                </div>
+            </div>
+            <div class="row align-items-center service-item-wrap">
+                <div class="col-lg-7 p-lg-0">
+                    <!--Service Area Start-->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade active show" id="spa" role="tabpanel">
+                            <img decoding="async" src="../18_Hotel_images/images/services/service1.webp" alt="">
+                        </div>
+                        <div class="tab-pane fade" id="restaurent" role="tabpanel">
+                            <img decoding="async" src="../18_Hotel_images/images/services/service2.webp" alt="">
+                        </div>
+                        <div class="tab-pane fade" id="swimming" role="tabpanel">
+                            <img decoding="async" src="../18_Hotel_images/images/services/service3.webp" alt="">
+                        </div>
+                        <div class="tab-pane fade" id="conference" role="tabpanel">
+                            <img decoding="async" src="../18_Hotel_images/images/services/service6.webp" alt="">
+                        </div>
+                    </div>
+                    <!--Service Area End-->
+                </div>
+                <div class="col-lg-5 position-relative">
+                    <!--Service Tab Menu Area Start-->
+                    <div class="service-menu-area">
+                        <ul class="nav">
+                            <li>
+                                <a data-bs-toggle="tab" href="#spa" class="active">
+                                    <span class="service-icon">
+                                        <img decoding="async"
+                                            src="../18_Hotel_images/images/services/service-icon1.webp" alt="">
+                                    </span>
+                                    <h5>Spa, beauty & Health</h5>
+                                    <p><span>Spa and beauty </span>một dịch vụ chăm sóc sức khỏe và thư giãn bao gồm các
+                                        liệu pháp như mát-xa, xông hơi, chăm sóc da và các liệu pháp thể chất khác nhằm
+                                        mang lại sự thư thái và cải thiện tình trạng sức khỏe của khách hàng </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#restaurent">
+                                    <span class="service-icon">
+                                        <img decoding="async"
+                                            src="../18_Hotel_images/images/services/service-icon2.webp" alt="">
+                                    </span>
+                                    <h5>Restaurant</h5>
+                                    <p><span>Restaurant</span> cung cấp các dịch vụ ẩm thực và giải trí cho khách hàng,
+                                        thường bao gồm việc phục vụ thực phẩm và đồ uống trong một không gian ăn uống
+                                        riêng biệt. </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#swimming">
+                                    <span class="service-icon">
+                                        <img decoding="async"
+                                            src="../18_Hotel_images/images/services/service-icon4.webp" alt="">
+                                    </span>
+                                    <h5>Swimming Pool</h5>
+                                    <p><span>Swimming Pool</span> mang lại trải nghiệm thư giãn và tận hưởng môi trường
+                                        nước
+                                        trong lành, giúp ta tạm thời thoát khỏi áp lực cuộc sống hàng ngày và rèn luyện
+                                        sức khỏe </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#conference">
+                                    <span class="service-icon">
+                                        <img decoding="async"
+                                            src="../18_Hotel_images/images/services/service-icon4.webp" alt="">
+                                    </span>
+                                    <h5>Conference Hall</h5>
+                                    <p><span>Conference Hall</span> cung cấp một không gian lý tưởng cho các cuộc họp,
+                                        hội thảo và sự kiện, tạo điều kiện thuận lợi để giao tiếp, chia sẻ ý kiến và xây
+                                        dựng mối quan hệ trong môi trường chuyên nghiệp. </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Service Tab Menu Area End-->
+                </div>
+            </div>
+        </div>
+        <div class="counter mt-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count1"></span>+
+                        </h1>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count2"></span>+
+                            </h2>
+                            <p>New Friendships</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count3"></span>+
+                            </h2>
+                            <p>Five Start Ratings</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count4"></span>+
+                            </h2>
+                            <p>Served Breakfast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services section Exit -->
+
+    <!-- Team section -->
+
+    <!-- Team Section Exit  -->
+
+    <!-- Gallery section -->
+    <section id="gallery" class="gallery_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6>MỘT SỐ HÌNH ẢNH ĐẸP CỦA CHÚNG TÔI</h6>
+                    <h3>PHÒNG TRƯNG BÀY</h3>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img decoding="async" src="../18_Hotel_images/images/gallery/1.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img decoding="async" src="../18_Hotel_images/images/gallery/2.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img decoding="async" src="../18_Hotel_images/images/gallery/3.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img decoding="async" src="../18_Hotel_images/images/gallery/4.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-md-6 gallery-item">
+                    <img decoding="async" src="../18_Hotel_images/images/gallery/5.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"> </div>
+                </div>
+                <div class="col-md-6 gallery-item">
+                    <img decoding="async" src="../18_Hotel_images/images/gallery/6.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section Exit -->
+
+
+    <!-- Footer section -->
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0 pb-0">
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h5>Hỗ trợ</h5>
+
+                    <div class="contact-info">
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-home me-3"></i> Hỗ trợ khách hàng</a></li>
+                            <li><a href="#"><i class="fa fa-phone me-3"></i>0944256710-096728100</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-envelope me-3"></i>booking15102001@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Khám phá thêm</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#">Chương trình khách hàng thân thiết</a></li>
+                        <li><a href="#">Ưu đãi theo mùa lễ</a></li>
+                        <li><a href="#">Bài viết du lịch</a></li>
+                        <li><a href="#">Booking.com dành cho doanh nghiệp</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Điều khoản và cài đặt </h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#">Về Booking.com</a></li>
+                        <li><a href="#">Chúng tôi hoạt động như thế nào</a></li>
+                        <li><a href="#">Du lịch bền vững</a></li>
+                        <li><a href="#">Truyền thông</a></li>
+                        <li><a href="#">Cơ hội làm việc</a></li>
+                        <li><a href="#">Quan hệ cổ đông</a></li>
+                        <li><a href="#">Liên hệ công ty</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer section exit -->
+
+    <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Custom Js Link -->
+    <script src="../main/main.js"></script>
+</body>
+
+</html>
